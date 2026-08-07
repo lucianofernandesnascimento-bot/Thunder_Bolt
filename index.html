@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background-color: rgb(43, 255, 0);
+            color: rgb(255, 0, 0);
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            border: 4px solid green;
+            padding: auto 2px;
+        }
+        main {
+            background-color: black;
+            color: aqua;
+            margin: 0 auto;
+            text-align: center;
+            max-width: 800px;
+            p.autor {
+             font-weight: bold;
+            }
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Site</h1>
+        <p>um site de treino</p>
+     </header>
+        <main>
+            <img src="Gemini_Generate.png" alt="floresta de outono">
+            <h1> aprendendo a criar um site </h1>
+            <p class= "autor"> nome: Nuciano Diamiro Fernandes do Nascimento</p>
+            <button>🔥<span>0</span></button>
+    </main>
+</body>
+<script>
+    const botao =  document.querySelector ("button");
+    botao.addEventListener ("click",botaoClicado);
+    function botaoClicado () {
+        let texto = botao.querySelector ("span");
+        texto.textContent++;
+    } 
+</script>
+</html>
